@@ -1,0 +1,14 @@
+.loading {
+  font-family: "Orbitron";
+  &__content {
+    font-size: 3rem;
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+  &__percentage {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 6rem;
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "main": {
+    "name": "HARIKRISHNAN  MOHAN",
+    "shortName": "HARI",
+    "occupation": "Developer in CTS",
+    "description": [
+      "FRONTEND",
+      "DEVELOPER"
+    ],
+    "tagline": ["Creating websites", "that solve your problems", "before you even know they exist."],
+    "whoIs": "WHO",
+    "image": "profilepic.jpg",
+    "bio": "Hi there! I am Hari! I've been coding for over 5 plus years now. As a Full Stack developer, I've worked in large corporations to help build & scale their companies. Over the year I understood that my strong skill is coding. Also, I've worked as Data Analyst - research and analysis of data that is customer focused.",
+    "contactmessage": "Get in touch with me...",
+    "email": "harikrishnanmohan.hm@gmail.com",
+    "phone": "+91 8281863104",
+    "address": {
+      "house_name": "Pullolil (H)",
+      "street": "Erattupetta",
+      "city": "Kottayam",
+      "state": "Kerala",
+      "country": "India",
+      "zip": "686580"
+    },
+    "resumedownload": "./asset/Harikrishnan Mohan.pdf",
+    "social": [{
+        "name": "facebook",
+        "url": "https://www.facebook.com/harikrishnan.mohan.75/",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/harikrishnan-mohan-331840130/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/hari____krishnan__mohan/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/harikrishnanmohan",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "My Programming Language Proficiency",
+    "education": [{
+      "school": "SASTRA Deemed To Be University",
+      "degree": "Master's Degree, Computer Applications",
+      "graduated": "Feb 2021",
+      "description": "Graduated with First Class Honours"
+    }],
+    "work": [{
+      "company": "TCS",
+      "title": "System Engineer",
+      "years": "July 2017 - Present",
+      "description": "Developing webpages using various front end tool and learnig new tech"
+    }],
+    "skills": [{
+        "name": "ReactJs",
+        "level": "80%"
+      },
+      {
+        "name": "Angular",
+        "level": "70%"
+      },
+      {
+        "name": "Python",
+        "level": "50%"
+      },
+      {
+        "name": "Git",
+        "level": "70%"
+      },
+      {
+        "name": "JavaScript",
+        "level": "80%"
+      },
+      {
+        "name": "Web Development",
+        "level": "80%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [{
+        "title": "Netflix Clone (React JS)",
+        "category": "",
+        "image": "Netflix.png",
+        "url": "https://netflix-9d97c.web.app/"
+      },
+      {
+        "title": "LinkedIn Clone (React JS)",
+        "category": "",
+        "image": "LinkedIn.jpg",
+        "url": "https://linkedin-clone-d9247.web.app"
+      },
+      {
+        "title": "WhatsApp Clone (React JS)",
+        "category": "",
+        "image": "WhatsApp.png",
+        "url": "https://whatsapp-clone-e4c54.web.app"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [{
+        "text": "",
+        "user": ""
+      },
+      {
+        "text": "",
+        "user": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+@import "./style/main.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: $token-font-lato;
+}
+
+.container__main {
+  min-height: 100vh;
+  padding: $token-space-0 $token-space-8;
+}
