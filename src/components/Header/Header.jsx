@@ -1,3 +1,5 @@
+import Reat from "react";
+
 import { useContext, useEffect, useRef } from "react";
 
 import { PortfolioContext } from "../../context/portfolio-context";

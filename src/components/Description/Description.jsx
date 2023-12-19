@@ -1,3 +1,5 @@
+import Reat from "react";
+
 import React, { useContext, useEffect, useRef } from "react";
 import gsap from "gsap";
 

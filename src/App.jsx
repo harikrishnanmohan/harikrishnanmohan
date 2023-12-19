@@ -1,3 +1,4 @@
+import Reat from "react";
 import Header from "./components/Header/Header";
 
 import "./App.scss";
@@ -9,8 +10,7 @@ import { useEffect, useState } from "react";
 import Loader from "./components/Loader/Loader";
 
 const App = () => {
-  // set to false
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [counter, setCounter] = useState(0);
 
   useEffect(() => {
