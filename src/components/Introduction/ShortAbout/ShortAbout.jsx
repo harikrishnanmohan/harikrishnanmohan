@@ -1,30 +1,43 @@
-import { useContext } from "react";
+import { useContext, useLayoutEffect, useRef } from "react";
 
 import { PortfolioContext } from "../../../context/portfolio-context";
 
-import black_and_white from "../../../assets/black_and_white.jpg";
+import color_two from "../../../assets/color_two.jpg";
+import white_arrow_with_outline from "../../../assets/white_arrow_with_outline.png";
 
 import "./ShortAbout.scss";
 
 const ShortAbout = () => {
   const { main } = useContext(PortfolioContext);
+
   return (
     <div className="shortAbout__container">
       <div className="shortAbout">
         <div className="shortAbout__profilePic">
           <img
             className="shortAbout__profilePic_pic"
-            src={black_and_white}
+            src={color_two}
             alt="profile pic"
           />
         </div>
         <div className="shortAbout__content">
           <div className="shortAbout__content__bio">
-            <p className="shortAbout__content__bio_content">{main?.shortBio}</p>
+            <div className="shortAbout__content__bio_content">
+              <p className="shortAbout__content__bio_content_partOne">
+                {main?.shortBioPartOne}
+              </p>
+              <p className="shortAbout__content__bio_content_partTwo">
+                {main?.shortBioPartTwo}
+              </p>
+            </div>
           </div>
           <div className="shortAbout__content__learnMore">
             <div className="shortAbout__content__learnMore_content">
-              {main?.learnMore}...
+              <img
+                className="shortAbout__content__learnMore_arrow"
+                src={white_arrow_with_outline}
+                alt="right arrow"
+              />
             </div>
           </div>
         </div>

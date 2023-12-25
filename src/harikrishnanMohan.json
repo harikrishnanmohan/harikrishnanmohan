@@ -1,16 +1,18 @@
 {
   "main": {
     "name": "HARIKRISHNAN  MOHAN",
-    "shortName": "HARI",
+    "shortNamePartOne": "HARI",
+    "shortNamePartTwo": "KRISHNAN  MOHAN",
     "occupation": "Developer in CTS",
     "intro": [
-      "FRONTEND",
-      "DEVELOPER"
+      "I'm Hari",
+      "I build web experiences."
     ],
-    "tagline": ["Creating websites", "that solve your problems", "before you even know they exist."],
+    "tagline": ["Creating websites that solve your problems", "before you even know they exist."],
     "whoIs": "WHO",
     "image": "profilepic.jpg",
-    "shortBio": "Hi there! I am Hari!. I've been coding for over 6 plus years as a frontend developer.",
+    "shortBioPartOne": "Hi there! I am Hari!. I've been coding for over 6 plus years as a frontend developer.",
+    "shortBioPartTwo": "I've built products for companies and businesses around the globe ranging from marketing websites to complex solutions with focus on fast, elegant and accessible user experiences.",
     "learnMore": "Learn more",
     "bio": "Hi there! I am Hari! I've been coding for over 6 plus years now. As a frontend developer, I've worked in large corporations to help build & scale their companies. Over the year I understood that my strong skill is coding. Also, I've worked as Data Analyst - research and analysis of data that is customer focused.",
     "contactmessage": "Get in touch with me...",

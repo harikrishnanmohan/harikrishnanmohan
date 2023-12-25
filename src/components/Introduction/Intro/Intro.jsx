@@ -12,15 +12,27 @@ const Intro = () => {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.to(
-        [".intro__letter", ".intro__word__tag", ".intro__tagLine_parts"],
-        {
-          y: 0,
-          stagger: 0.05,
-          delay: 0.2,
-          duration: 0.1,
-        }
-      );
+      // gsap.to(
+      //   [".intro__letter", ".intro__word__tag", ".intro__tagLine_parts"],
+      //   {
+      //     y: 0,
+      //     stagger: 0.05,
+      //     delay: 0.2,
+      //     duration: 0.1,
+      //   }
+      // );
+      const t1 = gsap.timeline();
+      t1.to([".intro__letter", ".intro__word__tag"], {
+        y: 0,
+        stagger: 0.05,
+        delay: 0.2,
+        duration: 0.1,
+      }).to(".intro__tagLine_parts", {
+        y: 0,
+        stagger: 0.05,
+        delay: 0.2,
+        duration: 0.1,
+      });
     }, component);
     return () => ctx.revert();
   }, []);
@@ -34,7 +46,7 @@ const Intro = () => {
               {[...item].map((char, index) => {
                 return (
                   <div className="intro__letter" key={index}>
-                    {char}
+                    {char == " " ? <div className="place_holder"></div> : char}
                   </div>
                 );
               })}
@@ -42,7 +54,7 @@ const Intro = () => {
           );
         })}
         <div className="intro__tag">
-          <div className="intro__word intro__word__tag">{main?.whoIs}</div>
+          {/* <div className="intro__word intro__word__tag">{main?.whoIs}</div> */}
           <div className="intro__tagLine">
             {main?.tagline.map((item) => (
               <div key={item} className="intro__tagLine_parts">
