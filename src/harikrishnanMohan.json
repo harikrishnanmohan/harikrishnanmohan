@@ -89,27 +89,25 @@
       }
     ]
   },
-  "portfolio": {
-    "projects": [{
-        "title": "Netflix Clone (React JS)",
-        "category": "",
-        "image": "Netflix.png",
-        "url": "https://netflix-9d97c.web.app/"
-      },
-      {
-        "title": "LinkedIn Clone (React JS)",
-        "category": "",
-        "image": "LinkedIn.jpg",
-        "url": "https://linkedin-clone-d9247.web.app"
-      },
-      {
-        "title": "WhatsApp Clone (React JS)",
-        "category": "",
-        "image": "WhatsApp.png",
-        "url": "https://whatsapp-clone-e4c54.web.app"
-      }
-    ]
-  },
+  "projects": [{
+      "title": "Netflix Clone (React JS)",
+      "category": "",
+      "image": "Netflix.png",
+      "url": "https://netflix-9d97c.web.app/"
+    },
+    {
+      "title": "LinkedIn Clone (React JS)",
+      "category": "",
+      "image": "LinkedIn.jpg",
+      "url": "https://linkedin-clone-d9247.web.app"
+    },
+    {
+      "title": "WhatsApp Clone (React JS)",
+      "category": "",
+      "image": "WhatsApp.png",
+      "url": "https://whatsapp-clone-e4c54.web.app"
+    }
+  ],
   "testimonials": {
     "testimonials": [{
         "text": "",
