@@ -1,0 +1,49 @@
+.shortAbout__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .shortAbout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 90vw;
+    &__profilePic {
+      &_pic {
+        max-width: 35vw;
+        max-height: 30vw;
+        object-fit: contain;
+        border-radius: 10px;
+        transition: transform 0.5s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3vw;
+      max-width: 40vw;
+      font-size: 1.5vw;
+      &__bio_content {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+      }
+      &__learnMore {
+        &_arrow {
+          width: 4vw;
+          transition: scale 0.5s;
+          cursor: pointer;
+          &:hover {
+            scale: 1.2;
+          }
+        }
+      }
+    }
+  }
+}

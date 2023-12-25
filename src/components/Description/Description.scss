@@ -1,47 +1,7 @@
-.description-container {
+.description__container {
   .description {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 50rem;
-    &__word {
-      text-transform: uppercase;
-      font-family: $token-font-bebas;
-      font-size: $token-font-size-32;
-      line-height: 7rem;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-      &__0,
-      &__3 {
-        margin-left: -5rem;
-      }
-      &__1 {
-        margin-left: 5rem;
-      }
-      &__tag {
-        display: inline-block;
-        transform: translateY(115px);
-        transition: transform 0.5s;
-      }
-    }
-    &__letter {
-      display: inline-block;
-      transform: translateY(115px);
-      transition: transform 0.5s;
-    }
-    &__tagLine {
-      margin-left: $token-space-4;
-      font-size: $token-font-size-1-2;
-      &_parts {
-        display: block;
-        transform: translateY(115px);
-        transition: transform 0.5s;
-      }
-    }
-    &__tag {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-      display: flex;
-      align-items: center;
-    }
   }
 }
