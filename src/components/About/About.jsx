@@ -14,12 +14,18 @@ const About = () => {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const t1 = gsap.timeline();
-      const text1 = new SplitType(".about__content__bio_content_partOne", {
-        types: "words, chars",
-      });
-      const text2 = new SplitType(".about__content__bio_content_partTwo", {
-        types: "words, chars",
-      });
+      const text1 = new SplitType(
+        ".about__intro__content__bio_content_partOne",
+        {
+          types: "words, chars",
+        }
+      );
+      const text2 = new SplitType(
+        ".about__intro__content__bio_content_partTwo",
+        {
+          types: "words, chars",
+        }
+      );
       t1.from([text1.chars, text2.chars], {
         stagger: 0.02,
         opacity: 0,
