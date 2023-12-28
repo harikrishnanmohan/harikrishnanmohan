@@ -1,10 +1,9 @@
 import React, { useLayoutEffect, useState, useRef } from "react";
-import { Outlet } from "react-router-dom";
-
 import gsap from "gsap";
 import Lenis from "@studio-freight/lenis";
 
 import Header from "./components/Header/Header";
+import Router from "./components/router/Router";
 import Loader from "./components/Loader/Loader";
 
 import { PortfolioContextProvider } from "./context/portfolio-context";
@@ -54,7 +53,7 @@ const App = () => {
       <div className="app" ref={component}>
         <Header />
         <div className="app__container">
-          <Outlet />
+          <Router />
         </div>
       </div>
     </PortfolioContextProvider>

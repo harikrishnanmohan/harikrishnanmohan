@@ -32,10 +32,7 @@ const Header = () => {
     <div className="header__container">
       <header className="header">
         <h1 className="header__logo">
-          <NavLink
-            className="anchor header__logo_content"
-            to="/harikrishnanmohan/"
-          >
+          <NavLink className="anchor header__logo_content" to="/">
             <div className="header__logo__short_name">
               {main?.shortNamePartOne}
               <div className="header__logo__long_name"></div>
@@ -45,7 +42,7 @@ const Header = () => {
         <ul className="header__links">
           <li className="header__link">
             <NavLink
-              to="/harikrishnanmohan/about"
+              to="/about"
               className={({ isActive }) =>
                 isActive ? "is_active" : "non_active"
               }
@@ -55,7 +52,7 @@ const Header = () => {
           </li>
           <li className="header__link">
             <NavLink
-              to="/harikrishnanmohan/projects"
+              to="/projects"
               className={({ isActive }) =>
                 isActive ? "is_active" : "non_active"
               }
@@ -65,7 +62,7 @@ const Header = () => {
           </li>
         </ul>
         <div className="header__contact_me">
-          <NavLink to="/harikrishnanmohan/contactMe">CONTACT ME</NavLink>
+          <NavLink to="/contactMe">CONTACT ME</NavLink>
         </div>
       </header>
     </div>
