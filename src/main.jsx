@@ -8,15 +8,15 @@ import Description from "./components/Description/Description.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/harikrishnanmohan/",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "/harikrishnanmohan/",
         element: <Description />,
       },
       {
-        path: "/about",
+        path: "/harikrishnanmohan/about",
         element: <About />,
       },
     ],
