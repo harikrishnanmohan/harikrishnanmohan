@@ -13,15 +13,6 @@
       text-transform: uppercase;
       font-size: 6vw;
       line-height: 8vw;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-    &__letter {
-      display: inline-block;
-      transform: translateY(150px);
-      transition: transform 0.5s;
-      .place_holder {
-        width: 2vw;
-      }
     }
     &__tagLine {
       font-size: 1.4vw;
@@ -31,14 +22,8 @@
       flex-direction: column;
       font-family: $token-font-lato;
       font-weight: 300;
-      &_parts {
-        display: inline-block;
-        transform: translateY(150px);
-        transition: transform 0.5s;
-      }
     }
     &__tag {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
       position: absolute;
       bottom: +5vw;
       right: +5vw;

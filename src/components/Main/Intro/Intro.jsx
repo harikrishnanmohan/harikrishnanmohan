@@ -1,5 +1,6 @@
 import { useContext, useEffect, useRef } from "react";
 import gsap from "gsap";
+import SplitType from "split-type";
 
 import { PortfolioContext } from "../../../context/portfolio-context";
 
@@ -12,17 +13,21 @@ const Intro = () => {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
+      const intro = new SplitType(".intro__word", { type: "char" });
+      const tag = new SplitType(".intro__tagLine_parts", { type: "chars" });
       const t1 = gsap.timeline();
-      t1.to([".intro__letter", ".intro__word__tag"], {
-        y: 0,
+      t1.from(intro.chars, {
+        y: 100,
         stagger: 0.05,
         delay: 0.2,
-        duration: 0.1,
-      }).to(".intro__tagLine_parts", {
-        y: 0,
-        stagger: 0.05,
+        duration: 0.5,
+        opacity: 0,
+      }).from(tag.chars, {
+        y: 10,
+        stagger: 0.01,
         delay: 0.2,
-        duration: 0.1,
+        duration: 0.5,
+        opacity: 0,
       });
     }, component);
     return () => ctx.revert();
@@ -31,27 +36,12 @@ const Intro = () => {
   return (
     <div className="intro__container" ref={component}>
       <div className="intro">
-        {intro?.map((item, index) => {
-          return (
-            <div key={item} className={`intro__word intro__word__${index}`}>
-              {[...item].map((char, index) => {
-                return (
-                  <div className="intro__letter" key={index}>
-                    {char == " " ? <div className="place_holder"></div> : char}
-                  </div>
-                );
-              })}
-            </div>
-          );
-        })}
+        <div className="intro__word">{intro[0]}</div>
+        <div className="intro__word">{intro[1]}</div>
         <div className="intro__tag">
-          {/* <div className="intro__word intro__word__tag">{main?.whoIs}</div> */}
           <div className="intro__tagLine">
-            {main?.tagline.map((item) => (
-              <div key={item} className="intro__tagLine_parts">
-                {item}
-              </div>
-            ))}
+            <div className="intro__tagLine_parts">{main?.tagline[0]}</div>
+            <div className="intro__tagLine_parts">{main?.tagline[1]}</div>
           </div>
         </div>
       </div>

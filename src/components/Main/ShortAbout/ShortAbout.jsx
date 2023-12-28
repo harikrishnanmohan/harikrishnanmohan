@@ -1,4 +1,5 @@
 import { useContext, useLayoutEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
@@ -15,6 +16,7 @@ import "./ShortAbout.scss";
 const ShortAbout = () => {
   const { main } = useContext(PortfolioContext);
   const component = useRef(null);
+  const navigate = useNavigate();
 
   useLayoutEffect(() => {
     const text1 = new SplitType(".shortAbout__content__bio_content_partOne", {
@@ -71,6 +73,7 @@ const ShortAbout = () => {
                 className="shortAbout__content__learnMore_arrow"
                 src={white_arrow_with_outline}
                 alt="right arrow"
+                onClick={() => navigate("/about")}
               />
             </div>
           </div>

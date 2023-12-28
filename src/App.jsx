@@ -3,7 +3,7 @@ import gsap from "gsap";
 import Lenis from "@studio-freight/lenis";
 
 import Header from "./components/Header/Header";
-import Description from "./components/Description/Description";
+import Router from "./components/router/Router";
 import Loader from "./components/Loader/Loader";
 
 import { PortfolioContextProvider } from "./context/portfolio-context";
@@ -53,7 +53,7 @@ const App = () => {
       <div className="app" ref={component}>
         <Header />
         <div className="app__container">
-          <Description />
+          <Router />
         </div>
       </div>
     </PortfolioContextProvider>

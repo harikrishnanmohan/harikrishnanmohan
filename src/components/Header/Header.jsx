@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useRef } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
 import { PortfolioContext } from "../../context/portfolio-context";
 
@@ -6,6 +7,7 @@ import "./Header.scss";
 
 const Header = () => {
   const { main } = useContext(PortfolioContext);
+  const location = useLocation();
 
   const body = document.body;
   let lastScroll = 0;
@@ -30,19 +32,37 @@ const Header = () => {
     <div className="header__container">
       <header className="header">
         <h1 className="header__logo">
-          <a className="anchor header__logo_content" href="/">
+          <NavLink className="anchor header__logo_content" to="/">
             <div className="header__logo__short_name">
               {main?.shortNamePartOne}
               <div className="header__logo__long_name"></div>
             </div>
-          </a>
+          </NavLink>
         </h1>
         <ul className="header__links">
-          <li className="header__link">ABOUT</li>
-          <li className="header__link">PROJECTS</li>
+          <li className="header__link">
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "is_active" : "non_active"
+              }
+            >
+              ABOUT
+            </NavLink>
+          </li>
+          <li className="header__link">
+            <NavLink
+              to="/projects"
+              className={({ isActive }) =>
+                isActive ? "is_active" : "non_active"
+              }
+            >
+              PROJECTS
+            </NavLink>
+          </li>
         </ul>
         <div className="header__contact_me">
-          <span>CONTACT ME</span>
+          <NavLink to="/contactMe">CONTACT ME</NavLink>
         </div>
       </header>
     </div>
