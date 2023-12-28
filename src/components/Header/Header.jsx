@@ -18,7 +18,7 @@ const Header = () => {
       body.classList.add("scroll-down");
     }
 
-    if (currentScroll > lastScroll && body.classList.contains("scroll-down")) {
+    if (currentScroll > lastScroll) {
       body.classList.remove("scroll-down");
       body.classList.add("scroll-up");
     }
@@ -33,15 +33,13 @@ const Header = () => {
           <a className="anchor header__logo_content" href="/">
             <div className="header__logo__short_name">
               {main?.shortNamePartOne}
-              <div className="header__logo__long_name">
-                {/* {main?.shortNamePartTwo} */}
-              </div>
+              <div className="header__logo__long_name"></div>
             </div>
           </a>
         </h1>
         <ul className="header__links">
-          <li className="header__link">PROJECTS</li>
           <li className="header__link">ABOUT</li>
+          <li className="header__link">PROJECTS</li>
         </ul>
         <div className="header__contact_me">
           <span>CONTACT ME</span>

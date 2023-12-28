@@ -1,0 +1,38 @@
+.footer__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 15vh;
+  font-family: $token-font-lato;
+  font-weight: 300;
+  width: 100%;
+  .footer {
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1vw;
+    &__social {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5vw;
+      &_item {
+        text-decoration: none;
+        color: #fff;
+        &::after {
+          content: "";
+          display: block;
+          width: 0%;
+          height: 2px;
+          background: #fff;
+          transition: all 0.3s;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

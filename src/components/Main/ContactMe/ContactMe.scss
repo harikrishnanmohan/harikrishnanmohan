@@ -1,8 +1,43 @@
 .contactMe__container {
-  height: 100vh;
   .contactMe {
-    border: 2px solid #fff;
-    height: 85vh;
-    border-radius: 20px;
+    // opacity: 0;
+    &__content {
+      border: 2px solid #fff;
+      border-radius: 20px;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      font-family: $token-font-lato;
+      gap: 2rem;
+      opacity: 0;
+    }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1vw;
+    // width: 50vw;
+    &__connectWithMe {
+      text-transform: uppercase;
+      font-size: 4vw;
+    }
+    &__mail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: 2px solid #fff;
+      border-radius: 100%;
+      width: 5vw;
+      height: 5vw;
+      font-size: 0.8vw;
+      cursor: pointer;
+      // padding: 10px;
+      word-wrap: break-word;
+    }
   }
 }
