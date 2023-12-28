@@ -11,7 +11,6 @@
     height: 100%;
     &__word {
       text-transform: uppercase;
-      // font-family: $token-font-bebas;
       font-size: 6vw;
       line-height: 8vw;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -30,6 +29,8 @@
       align-items: flex-start;
       justify-content: center;
       flex-direction: column;
+      font-family: $token-font-lato;
+      font-weight: 300;
       &_parts {
         display: inline-block;
         transform: translateY(150px);

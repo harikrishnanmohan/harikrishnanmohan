@@ -9,13 +9,14 @@ import "./ShortProjects.scss";
 const ShortProjects = () => {
   const { projects } = useContext(PortfolioContext);
 
-  console.log(projects);
   return (
     <div className="shortProjects__container">
       <div className="shortProjects__projects">
         {projects.map((item) => {
           return (
-            <div className="shortProjects__projects_project">{item?.title}</div>
+            <div className="shortProjects__projects_project" key={item?.title}>
+              {item?.title}
+            </div>
           );
         })}
         <div className="shortProjects__projects__learnMore_content">
