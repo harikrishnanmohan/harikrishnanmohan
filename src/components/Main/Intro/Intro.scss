@@ -11,11 +11,11 @@
     height: 100%;
     &__word {
       text-transform: uppercase;
-      font-size: 6vw;
+      font-size: clamp(2rem, 6vw, 6rem);
       line-height: 8vw;
     }
     &__tagLine {
-      font-size: 1.4vw;
+      font-size: clamp(0.9rem, 1.4vw, 2rem);
       display: flex;
       align-items: flex-start;
       justify-content: center;

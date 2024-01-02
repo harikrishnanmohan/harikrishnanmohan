@@ -1,4 +1,6 @@
 .contactMe__container {
+  width: 90vw;
+  margin: 0 auto;
   .contactMe {
     // opacity: 0;
     &__content {
@@ -19,11 +21,10 @@
     align-items: center;
     gap: 1.5rem;
     text-transform: uppercase;
-    font-size: 1vw;
-    // width: 50vw;
+    font-size: clamp(1rem, 1vw, 5rem);
     &__connectWithMe {
       text-transform: uppercase;
-      font-size: 4vw;
+      font-size: clamp(2rem, 4vw, 5rem);
     }
     &__mail {
       display: flex;
@@ -34,9 +35,9 @@
       border-radius: 100%;
       width: 5vw;
       height: 5vw;
-      font-size: 0.8vw;
+      padding: 0.3rem;
+      font-size: clamp(0.35rem, 0.8vw, 1rem);
       cursor: pointer;
-      // padding: 10px;
       word-wrap: break-word;
     }
   }

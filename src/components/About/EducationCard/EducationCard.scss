@@ -1,0 +1,24 @@
+.education__content {
+  opacity: 0;
+  padding: 5vh 0;
+  &_item {
+    border: 2px solid #2f2f33;
+    background-color: #232327;
+    border-radius: 10px;
+    min-height: 10vh;
+    width: 35vw;
+    padding: $token-space-4;
+    &_title {
+      margin-bottom: 3vh;
+    }
+    &_content {
+      font-size: clamp(1rem, 1vw, 1.5rem);
+    }
+  }
+}
+#education__content_one {
+  transform: translateX(-100%);
+}
+#education__content_two {
+  transform: translateX(100%);
+}

@@ -62,7 +62,7 @@ const Header = () => {
           </li>
         </ul>
         <div className="header__contact_me">
-          <NavLink to="/contactMe">CONTACT ME</NavLink>
+          <a href="#contactMe">CONTACT ME</a>
         </div>
       </header>
     </div>

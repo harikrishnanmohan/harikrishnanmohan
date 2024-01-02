@@ -1,17 +1,22 @@
-.shortProjects__container {
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  .shortProjects__projects {
+.shortProjects {
+  &__container {
+    height: 100vh;
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__projects {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 3vw;
+    gap: 5vw;
     &_project {
-      border: 1px solid rgb(165, 159, 159);
+      border: 1px solid rgb(254, 254, 254);
       background: rgb(165, 159, 159);
       height: 30vw;
       width: 20vw;

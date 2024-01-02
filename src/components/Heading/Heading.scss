@@ -1,0 +1,19 @@
+.heading {
+  background: -webkit-linear-gradient(#fff, #242222);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 12vh;
+  margin-top: 3vh;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  font-weight: 500;
+  line-height: 2;
+  &::before {
+    content: "";
+    width: 85vw;
+    display: block;
+    background: linear-gradient(to right, #fff, $token-main-color);
+    height: 4px;
+    position: absolute;
+  }
+}

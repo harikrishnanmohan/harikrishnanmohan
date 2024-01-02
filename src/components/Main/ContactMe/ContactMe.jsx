@@ -31,7 +31,7 @@ const ContactMe = () => {
   }, []);
 
   return (
-    <div className="contactMe__container" ref={component}>
+    <div className="contactMe__container" ref={component} id="contactMe">
       <div className="contactMe__content">
         <div className="contactMe">
           <div className="contactMe__contactMe">{contactMe}</div>
