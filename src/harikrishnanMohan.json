@@ -8,8 +8,8 @@
       "Creating websites that solve your problems",
       "before you even know they exist."
     ],
-    "shortBioPartOne": "Hi there! I am Hari!. I've been coding for over 6 plus years as a frontend developer.",
-    "shortBioPartTwo": "I've built products for companies and businesses around the globe ranging from marketing websites to complex solutions with focus on fast, elegant and accessible user experiences.",
+    "shortBioPartOne": "Hi, I'm Hari, a seasoned frontend developer with over six years of experience. I have successfully delivered products for companies and businesses worldwide, ranging from marketing websites to complex solutions.",
+    "shortBioPartTwo": "My work emphasizes fast, elegant, and accessible user experiences, ensuring both functionality and aesthetic appeal.",
     "learnMore": "Learn more",
     "bio": "Hi there! I am Hari! I've been coding for over 6 plus years now. As a frontend developer, I've worked in large corporations to help build & scale their companies. Over the year I understood that my strong skill is coding. Also, I've worked as Data Analyst - research and analysis of data that is customer focused.",
     "myExpertise": "My expertise lies in transforming concepts and wireframes into captivating designs that resonate with users. I leverage a diverse skill set that encompasses HTML, CSS, and JavaScript, along with various frameworks and libraries, to build responsive and interactive interfaces across multiple devices and platforms.",
@@ -51,6 +51,7 @@
   },
   "aboutHeading": "About",
   "projectsHeading": "Projects",
+  "contactMeHeading": "Contact Me",
   "techStackHeading": "Tech Stack",
   "resume": {
     "skillmessage": "My Programming Language Proficiency",
@@ -106,22 +107,10 @@
   },
   "projects": [
     {
-      "title": "Netflix Clone (React JS)",
+      "title": "Story Corner (React JS)",
       "category": "",
       "image": "Netflix.png",
-      "url": "https://netflix-9d97c.web.app/"
-    },
-    {
-      "title": "LinkedIn Clone (React JS)",
-      "category": "",
-      "image": "LinkedIn.jpg",
-      "url": "https://linkedin-clone-d9247.web.app"
-    },
-    {
-      "title": "WhatsApp Clone (React JS)",
-      "category": "",
-      "image": "WhatsApp.png",
-      "url": "https://whatsapp-clone-e4c54.web.app"
+      "url": "https://harikrishnanmohan.github.io/storycorner/login"
     }
   ],
   "contactMe": "Have an opportunity in mind?",

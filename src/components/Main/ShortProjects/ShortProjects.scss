@@ -1,6 +1,6 @@
 .shortProjects {
   &__container {
-    max-width: 80vw;
+    width: 80vw;
     margin: 0 auto;
     margin-bottom: 10vh;
   }
@@ -30,6 +30,32 @@
         cursor: pointer;
         &:hover {
           scale: 1.2;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 445px) {
+  .shortProjects__container {
+    width: 100%;
+    margin-bottom: 3rem;
+    .shortProjects {
+      &__projects {
+        flex-direction: column;
+        gap: 2rem;
+        &_project {
+          width: 15rem;
+          height: 12rem;
+        }
+        &__learnMore {
+          &_arrow {
+            width: 2rem;
+          }
+        }
+      }
+      &__content {
+        .heading {
+          margin-bottom: 3rem;
         }
       }
     }

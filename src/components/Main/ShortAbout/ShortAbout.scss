@@ -1,6 +1,6 @@
 .shortAbout__container {
   font-family: $token-font-lato;
-  font-size: clamp(0.9rem, 1.5vw, 1.75rem);
+  font-size: clamp(1rem, 1.5vw, 1.75rem);
   font-weight: 300;
   line-height: 1.5;
   max-width: 80vw;
@@ -51,6 +51,43 @@
             cursor: pointer;
             &:hover {
               scale: 1.2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 445px) {
+  .shortAbout__container {
+    width: 100%;
+    margin-bottom: 3rem;
+    .shortAbout {
+      .heading {
+        margin-bottom: 2rem;
+      }
+      &__intro {
+        flex-direction: column;
+        // align-items: flex-start;
+        &_profilePic {
+          &_pic {
+            height: 14rem;
+            width: 10rem;
+          }
+        }
+        &_content {
+          max-width: 100%;
+          &_learnMore {
+            &_arrow {
+              width: 1.5rem;
+            }
+          }
+          &_techStack {
+            justify-content: space-between;
+            margin-top: 2rem;
+            &_icon {
+              width: 1.25rem;
+              height: 1.25rem;
             }
           }
         }

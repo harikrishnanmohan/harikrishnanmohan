@@ -36,3 +36,16 @@
     }
   }
 }
+@media (max-width: 445px) {
+  .footer__container {
+    .footer {
+      flex-direction: column;
+      // align-items: flex-start;
+      justify-content: center;
+      gap: 0rem;
+      &__message {
+        display: none;
+      }
+    }
+  }
+}

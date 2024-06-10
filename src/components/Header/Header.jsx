@@ -1,12 +1,15 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import { PortfolioContext } from "../../context/portfolio-context";
 
 import "./Header.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const { main } = useContext(PortfolioContext);
+  const [showLinks, setShowLinks] = useState(false);
 
   const body = document.body;
   let lastScroll = 0;
@@ -38,7 +41,12 @@ const Header = () => {
             </div>
           </NavLink>
         </h1>
-        <ul className="header__links">
+        <FontAwesomeIcon
+          icon={faBars}
+          className="header__links_icon"
+          onClick={() => setShowLinks((prev) => !prev)}
+        />
+        <ul className={`header__links ${showLinks ? "inView" : "ofView"}`}>
           <li className="header__link">
             <NavLink
               to="/about"
@@ -59,8 +67,11 @@ const Header = () => {
               PROJECTS
             </NavLink>
           </li>
+          <li className="header__contact_me header__link">
+            <a href="#contactMe">CONTACT ME</a>
+          </li>
         </ul>
-        <div className="header__contact_me">
+        <div className="header__contact_me smallScreen">
           <a href="#contactMe">CONTACT ME</a>
         </div>
       </header>

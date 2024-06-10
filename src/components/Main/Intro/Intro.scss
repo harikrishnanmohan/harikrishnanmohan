@@ -33,3 +33,16 @@
     }
   }
 }
+
+@media (max-width: 445px) {
+  .intro__container {
+    .intro {
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      // .char {
+      //   margin-right: 3px;
+      // }
+    }
+  }
+}

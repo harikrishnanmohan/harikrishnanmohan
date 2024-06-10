@@ -1,6 +1,9 @@
 .contactMe__container {
   width: 90vw;
   margin: 0 auto;
+  .show {
+    display: none;
+  }
   .contactMe {
     // opacity: 0;
     &__content {
@@ -36,11 +39,28 @@
       width: 5vw;
       height: 5vw;
       padding: 0.3rem;
-      font-size: clamp(0.35rem, 0.8vw, 1rem);
+      font-size: clamp(0.6rem, 0.8vw, 1rem);
       cursor: pointer;
       word-wrap: break-word;
       color: #fff;
       text-decoration: none;
+    }
+  }
+}
+@media (max-width: 445px) {
+  .contactMe__container {
+    width: 100%;
+    .show {
+      // display: block;
+      .heading {
+        margin-bottom: 2rem;
+      }
+    }
+    .contactMe__content {
+      .contactMe__mail {
+        width: 3rem;
+        height: 3rem;
+      }
     }
   }
 }

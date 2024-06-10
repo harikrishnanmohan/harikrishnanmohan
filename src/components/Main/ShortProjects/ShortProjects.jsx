@@ -24,6 +24,7 @@ const ShortProjects = () => {
               <div
                 className="shortProjects__projects_project"
                 key={item?.title}
+                onClick={() => window.open(item.url, "_blank")}
               >
                 {item?.title}
               </div>

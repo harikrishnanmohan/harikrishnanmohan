@@ -6,6 +6,7 @@ import "./ContactMe.scss";
 
 import { PortfolioContext } from "../../../context/portfolio-context";
 import { Link } from "react-router-dom";
+// import Heading from "../../Heading/Heading";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,6 +34,13 @@ const ContactMe = () => {
 
   return (
     <div className="contactMe__container" ref={component} id="contactMe">
+      {/* <div className="show">
+        <Heading>
+          <span className="section__number">03</span>
+          <span>{contactMeHeading}</span>
+          <span className="section__number">03</span>
+        </Heading>
+      </div> */}
       <div className="contactMe__content">
         <div className="contactMe">
           <div className="contactMe__contactMe">{contactMe}</div>
