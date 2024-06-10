@@ -187,39 +187,35 @@ const About = () => {
           <p className="contact__content_item_name">{main.name}</p>
           <p className="contact__content_item">{main.email}</p>
           <p className="contact__content_item">{main.phone}</p>
-          {/* <div className="contact__conten_item">
-            <span className="contact__title_item_content">
-              {main.address.house_name},
-            </span>
-            <span className="contact__title_item_content">
-              {main.address.street},
-            </span>
-            <span className="contact__title_item_content">
-              {main.address.city},
-            </span>
-            <span className="contact__title_item_content">
-              {main.address.state},
-            </span>
-            <span className="contact__title_item_content">
-              {main.address.country},
-            </span>
-            <span className="contact__title_item_content">
-              {main.address.zip}
-            </span>
-          </div> */}
           <div className="contact__content_item_social">
             <div>{main.contactmessage}</div>
             <div className="contact__content_item_social_icons">
-              <a href={main.social[1].url} target="_blank" rel="noopener">
+              <a
+                href={main.social[1].url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={linkedin} alt="linkedin" />
               </a>
-              <a href={main.social[0].url} target="_blank" rel="noopener">
+              <a
+                href={main.social[0].url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={facebook} alt="facebook" />
               </a>
-              <a href={main.social[2].url} target="_blank" rel="noopener">
+              <a
+                href={main.social[2].url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={instagram} alt="instagram" />
               </a>
-              <a href={main.social[3].url} target="_blank" rel="noopener">
+              <a
+                href={main.social[3].url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={github} alt="github" />
               </a>
             </div>

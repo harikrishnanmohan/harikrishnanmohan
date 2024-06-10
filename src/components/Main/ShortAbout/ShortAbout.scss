@@ -3,9 +3,9 @@
   font-size: clamp(0.9rem, 1.5vw, 1.75rem);
   font-weight: 300;
   line-height: 1.5;
-  height: 100vh;
   max-width: 80vw;
   margin: 0 auto;
+  margin-bottom: 10vh;
   .shortAbout {
     &__intro {
       display: flex;
@@ -41,7 +41,7 @@
           &_icon {
             width: 2.5vw;
             height: 2.5vw;
-            opacity: 0;
+            opacity: 0.2;
           }
         }
         &_learnMore {

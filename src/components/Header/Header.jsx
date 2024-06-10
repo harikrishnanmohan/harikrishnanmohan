@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useRef } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { useContext } from "react";
+import { NavLink } from "react-router-dom";
 
 import { PortfolioContext } from "../../context/portfolio-context";
 
@@ -7,7 +7,6 @@ import "./Header.scss";
 
 const Header = () => {
   const { main } = useContext(PortfolioContext);
-  const location = useLocation();
 
   const body = document.body;
   let lastScroll = 0;

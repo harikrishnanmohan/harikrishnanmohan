@@ -1,7 +1,3 @@
-import Reat from "react";
-
-import React, { useContext, useEffect, useRef } from "react";
-
 import Intro from "../Main/Intro/Intro";
 import ShortAbout from "../Main/ShortAbout/ShortAbout";
 import ShortProjects from "../Main/ShortProjects/ShortProjects";

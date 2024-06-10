@@ -6,8 +6,8 @@
   .intro {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
     height: 100%;
     &__word {
       text-transform: uppercase;
@@ -24,9 +24,12 @@
       font-weight: 300;
     }
     &__tag {
-      position: absolute;
+      // position: absolute;
       bottom: +5vw;
-      right: +5vw;
+      // right: +5vw;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
     }
   }
 }

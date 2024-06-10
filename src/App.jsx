@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState, useRef } from "react";
+import { useLayoutEffect, useState, useRef } from "react";
 import gsap from "gsap";
 import Lenis from "@studio-freight/lenis";
 

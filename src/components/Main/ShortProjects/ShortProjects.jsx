@@ -13,7 +13,11 @@ const ShortProjects = () => {
   return (
     <div className="shortProjects__container">
       <div className="shortProjects__content">
-        <Heading>{projectsHeading}</Heading>
+        <Heading>
+          <span className="section__number">02</span>
+          <span>{projectsHeading}</span>
+          <span className="section__number">02</span>
+        </Heading>
         <div className="shortProjects__projects">
           {projects.map((item) => {
             return (

@@ -36,8 +36,10 @@ const Intro = () => {
   return (
     <div className="intro__container" ref={component}>
       <div className="intro">
-        <div className="intro__word">{intro[0]}</div>
-        <div className="intro__word">{intro[1]}</div>
+        <div className="intro__words">
+          <div className="intro__word">{intro[0]}</div>
+          <div className="intro__word">{intro[1]}</div>
+        </div>
         <div className="intro__tag">
           <div className="intro__tagLine">
             <div className="intro__tagLine_parts">{main?.tagline[0]}</div>

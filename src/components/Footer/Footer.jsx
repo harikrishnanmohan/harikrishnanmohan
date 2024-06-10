@@ -19,7 +19,7 @@ const Footer = () => {
                 className="footer__social_item"
                 href={item?.url}
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 {item?.name}
               </a>

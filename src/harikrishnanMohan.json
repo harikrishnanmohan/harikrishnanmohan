@@ -3,11 +3,11 @@
     "name": "HARIKRISHNAN  MOHAN",
     "shortNamePartOne": "HARI",
     "shortNamePartTwo": "KRISHNAN  MOHAN",
-    "intro": [
-      "I'm Hari",
-      " I build web experiences."
+    "intro": ["I'm Hari", " I build web experiences."],
+    "tagline": [
+      "Creating websites that solve your problems",
+      "before you even know they exist."
     ],
-    "tagline": ["Creating websites that solve your problems", "before you even know they exist."],
     "shortBioPartOne": "Hi there! I am Hari!. I've been coding for over 6 plus years as a frontend developer.",
     "shortBioPartTwo": "I've built products for companies and businesses around the globe ranging from marketing websites to complex solutions with focus on fast, elegant and accessible user experiences.",
     "learnMore": "Learn more",
@@ -26,7 +26,8 @@
       "zip": "686580"
     },
     "resumedownload": "./asset/Harikrishnan Mohan.pdf",
-    "social": [{
+    "social": [
+      {
         "name": "Facebook",
         "url": "https://www.facebook.com/harikrishnan.mohan.75/",
         "path": "./assets/facebook.svg"
@@ -38,7 +39,7 @@
       },
       {
         "name": "Instagram",
-        "url": "https://www.instagram.com/hari__krishnan__mohan",
+        "url": "https://www.instagram.com/harii__krishnan___",
         "path": "./assets/instagram.svg"
       },
       {
@@ -48,13 +49,14 @@
       }
     ]
   },
-  "aboutHeading": "About.",
-  "projectsHeading": "Projects.",
-  "techStackHeading": "Tech Stack.",
+  "aboutHeading": "About",
+  "projectsHeading": "Projects",
+  "techStackHeading": "Tech Stack",
   "resume": {
     "skillmessage": "My Programming Language Proficiency",
     "educationTitle": "education",
-    "education": [{
+    "education": [
+      {
         "school": "SASTRA Deemed To Be University",
         "degree": "Master's Degree, Computer Applications.",
         "graduated": "Feb 2021",
@@ -67,13 +69,16 @@
         "description": "8.01 GPA"
       }
     ],
-    "work": [{
-      "company": "TCS",
-      "title": "System Engineer",
-      "years": "July 2017 - Present",
-      "description": "Developing webpages using various front end tool and learnig new tech"
-    }],
-    "skills": [{
+    "work": [
+      {
+        "company": "TCS",
+        "title": "System Engineer",
+        "years": "July 2017 - Present",
+        "description": "Developing webpages using various front end tool and learnig new tech"
+      }
+    ],
+    "skills": [
+      {
         "name": "ReactJs",
         "level": "80%"
       },
@@ -99,7 +104,8 @@
       }
     ]
   },
-  "projects": [{
+  "projects": [
+    {
       "title": "Netflix Clone (React JS)",
       "category": "",
       "image": "Netflix.png",
@@ -123,7 +129,8 @@
   "writeA": "Write a",
   "mail": "mail",
   "testimonials": {
-    "testimonials": [{
+    "testimonials": [
+      {
         "text": "",
         "user": ""
       },

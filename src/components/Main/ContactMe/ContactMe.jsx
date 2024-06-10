@@ -5,11 +5,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./ContactMe.scss";
 
 import { PortfolioContext } from "../../../context/portfolio-context";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ContactMe = () => {
-  const { contactMe, connectWithMe, writeA, mail } =
+  const { contactMe, connectWithMe, writeA, mail, main } =
     useContext(PortfolioContext);
 
   const component = useRef(null);
@@ -36,10 +37,17 @@ const ContactMe = () => {
         <div className="contactMe">
           <div className="contactMe__contactMe">{contactMe}</div>
           <div className="contactMe__connectWithMe">{connectWithMe}</div>
-          <div className="contactMe__mail">
+          <Link
+            className="contactMe__mail"
+            to="#"
+            onClick={(e) => {
+              window.location.href = `mailto:${main.email}`;
+              e.preventDefault();
+            }}
+          >
             <p>{writeA}</p>
             <p>{mail}</p>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

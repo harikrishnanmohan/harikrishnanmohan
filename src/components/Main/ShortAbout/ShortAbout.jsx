@@ -64,7 +64,11 @@ const ShortAbout = () => {
   return (
     <div className="shortAbout__container" ref={component}>
       <div className="shortAbout">
-        <Heading>{aboutHeading}</Heading>
+        <Heading>
+          <span className="section__number">01</span>
+          <span>{aboutHeading}</span>
+          <span className="section__number">01</span>
+        </Heading>
         <div className="shortAbout__intro">
           <div className="shortAbout__intro_profilePic">
             <img
