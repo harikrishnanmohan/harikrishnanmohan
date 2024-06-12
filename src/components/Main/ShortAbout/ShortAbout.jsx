@@ -121,7 +121,7 @@ const ShortAbout = () => {
                 className="shortAbout__intro_content_learnMore_arrow"
                 src={white_arrow_with_outline}
                 alt="right arrow"
-                onClick={() => navigate("/about")}
+                onClick={() => navigate("/harikrishnanmohan/about")}
               />
             </div>
           </div>

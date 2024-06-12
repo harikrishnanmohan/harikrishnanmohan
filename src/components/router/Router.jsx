@@ -5,8 +5,8 @@ import About from "../About/About";
 const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<Description />}></Route>
-      <Route path="/about" element={<About />}></Route>
+      <Route path="/harikrishnanmohan/" element={<Description />}></Route>
+      <Route path="/harikrishnanmohan/about" element={<About />}></Route>
     </Routes>
   );
 };
