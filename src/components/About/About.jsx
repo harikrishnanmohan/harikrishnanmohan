@@ -1,4 +1,4 @@
-import { useContext, useLayoutEffect, useRef } from "react";
+import { useContext, useEffect, useLayoutEffect, useRef } from "react";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -15,7 +15,7 @@ import typescript from "../../assets/typescript.svg";
 import css from "../../assets/css.svg";
 import sass from "../../assets/sass.svg";
 
-import color_two from "../../assets/color_two.jpg";
+import hari from "../../assets/hari.jpg";
 import facebook from "../../assets/facebook.svg";
 import instagram from "../../assets/instagram.svg";
 import github from "../../assets/github.svg";
@@ -27,6 +27,10 @@ gsap.registerPlugin(ScrollTrigger);
 const About = () => {
   const { main, resume } = useContext(PortfolioContext);
   const component = useRef(null);
+
+  useEffect(() => {
+    window.scroll(0, 0);
+  });
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -82,7 +86,7 @@ const About = () => {
       t1.to("#education__content_one", {
         opacity: 1,
         stagger: 0.1,
-        xPercent: 100,
+        // xPercent: 100,
         delay: 1,
         scrollTrigger: {
           trigger: ".education__content",
@@ -95,7 +99,7 @@ const About = () => {
         .to("#education__content_two", {
           opacity: 1,
           stagger: 0.1,
-          xPercent: -100,
+          // xPercent: -100,
           delay: 1,
           scrollTrigger: {
             trigger: ".education__content",
@@ -129,7 +133,7 @@ const About = () => {
           <div className="about__intro_profilePic">
             <img
               className="about__intro_profilePic_pic"
-              src={color_two}
+              src={hari}
               alt="profile pic"
             />
           </div>

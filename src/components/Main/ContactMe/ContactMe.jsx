@@ -24,7 +24,7 @@ const ContactMe = () => {
         scrollTrigger: {
           trigger: ".contactMe",
           start: "top bottom",
-          end: "top 10%",
+          end: "top 20%",
           scrub: true,
         },
       });

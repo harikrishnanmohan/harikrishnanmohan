@@ -26,6 +26,11 @@ const ShortProjects = () => {
                 key={item?.title}
                 onClick={() => window.open(item.url, "_blank")}
               >
+                <img
+                  src={item.image}
+                  alt=""
+                  className="shortProjects__projects_project-image"
+                />
                 {item?.title}
               </div>
             );

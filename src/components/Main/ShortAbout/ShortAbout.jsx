@@ -7,7 +7,7 @@ import SplitType from "split-type";
 
 import { PortfolioContext } from "../../../context/portfolio-context";
 
-import color_two from "../../../assets/color_two.jpg";
+import hari from "../../../assets/hari.jpg";
 
 import html_5 from "../../../assets/html_5.svg";
 import react from "../../../assets/react.svg";
@@ -73,7 +73,7 @@ const ShortAbout = () => {
           <div className="shortAbout__intro_profilePic">
             <img
               className="shortAbout__intro_profilePic_pic"
-              src={color_two}
+              src={hari}
               alt="profile pic"
             />
           </div>
