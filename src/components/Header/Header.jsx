@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import { PortfolioContext } from "../../context/portfolio-context";
 
@@ -10,6 +10,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   const { main } = useContext(PortfolioContext);
   const [showLinks, setShowLinks] = useState(false);
+  const navigate = useNavigate();
 
   const body = document.body;
   let lastScroll = 0;
@@ -72,7 +73,13 @@ const Header = () => {
           </li>
         </ul>
         <div className="header__contact_me smallScreen">
-          <a href="#contactMe">CONTACT ME</a>
+          <a
+            onClick={() => {
+              navigate("/", { state: { scrollToDiv: true } });
+            }}
+          >
+            CONTACT ME
+          </a>
         </div>
       </header>
     </div>

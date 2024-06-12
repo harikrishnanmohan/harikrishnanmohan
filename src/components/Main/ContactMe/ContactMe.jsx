@@ -1,4 +1,4 @@
-import { useContext, useLayoutEffect, useRef } from "react";
+import { forwardRef, useContext, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -6,11 +6,10 @@ import "./ContactMe.scss";
 
 import { PortfolioContext } from "../../../context/portfolio-context";
 import { Link } from "react-router-dom";
-// import Heading from "../../Heading/Heading";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ContactMe = () => {
+const ContactMe = forwardRef((props, ref) => {
   const { contactMe, connectWithMe, writeA, mail, main } =
     useContext(PortfolioContext);
 
@@ -34,14 +33,7 @@ const ContactMe = () => {
 
   return (
     <div className="contactMe__container" ref={component} id="contactMe">
-      {/* <div className="show">
-        <Heading>
-          <span className="section__number">03</span>
-          <span>{contactMeHeading}</span>
-          <span className="section__number">03</span>
-        </Heading>
-      </div> */}
-      <div className="contactMe__content">
+      <div className="contactMe__content" ref={ref}>
         <div className="contactMe">
           <div className="contactMe__contactMe">{contactMe}</div>
           <div className="contactMe__connectWithMe">{connectWithMe}</div>
@@ -60,6 +52,8 @@ const ContactMe = () => {
       </div>
     </div>
   );
-};
+});
+
+ContactMe.displayName = "ContactMe";
 
 export default ContactMe;
