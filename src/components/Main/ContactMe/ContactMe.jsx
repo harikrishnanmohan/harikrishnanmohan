@@ -41,8 +41,8 @@ const ContactMe = forwardRef((props, ref) => {
             className="contactMe__mail"
             to="#"
             onClick={(e) => {
-              window.location.href = `mailto:${main.email}`;
               e.preventDefault();
+              window.location.href = `mailto:${main.email}`;
             }}
           >
             <p>{writeA}</p>

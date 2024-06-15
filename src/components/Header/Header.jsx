@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
 import { PortfolioContext } from "../../context/portfolio-context";
@@ -11,28 +11,32 @@ const Header = () => {
   const { main } = useContext(PortfolioContext);
   const [showLinks, setShowLinks] = useState(false);
   const navigate = useNavigate();
+  const [currentScrollY, setCurrentScrollY] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
 
-  const body = document.body;
-  let lastScroll = 0;
-  window.addEventListener("scroll", () => {
-    const currentScroll = window.scrollY;
-    if (currentScroll <= 0) body.classList.remove("scroll-up");
+  useEffect(() => {
+    const controllHeader = () => {
+      if (typeof window !== "undefined") {
+        if (window.scrollY > currentScrollY && currentScrollY > 100)
+          setIsVisible(false);
+        else setIsVisible(true);
+        setCurrentScrollY(window.scrollY);
+      }
+    };
 
-    if (currentScroll < lastScroll && !body.classList.contains("scroll-down")) {
-      body.classList.remove("scroll-up");
-      body.classList.add("scroll-down");
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controllHeader);
+
+      return () => window.removeEventListener("scroll", controllHeader);
     }
-
-    if (currentScroll > lastScroll) {
-      body.classList.remove("scroll-down");
-      body.classList.add("scroll-up");
-    }
-
-    lastScroll = currentScroll;
-  });
+  }, [currentScrollY]);
 
   return (
-    <div className="header__container">
+    <div
+      className={`header__container ${
+        isVisible ? " header-visible" : "header-hidden"
+      }`}
+    >
       <header className="header">
         <h1 className="header__logo">
           <NavLink className="anchor header__logo_content" to="/">

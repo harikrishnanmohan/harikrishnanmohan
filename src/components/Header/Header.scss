@@ -1,4 +1,10 @@
 .header__container {
+  &.header-hidden {
+    transform: translateY(-100%);
+  }
+  &.header-visible {
+    transform: translateY(0);
+  }
   a {
     text-decoration: none;
     color: #fff;
